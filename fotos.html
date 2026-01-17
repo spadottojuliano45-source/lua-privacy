@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #000; color: #fff; font-family: Arial, sans-serif; margin: 0;" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+    <style>
+        /* TRAVA DE CÓPIA - NÃO MEXE NO LAYOUT */
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+
+        img {
+            max-width: 90%; 
+            height: auto;
+            display: block; 
+            margin: 20px auto; 
+            background-repeat: no-repeat;
+            box-shadow: 0 0 20px rgba(121, 56, 178, 0.2); 
+            pointer-events: none; 
+            user-drag: none;
+            -webkit-user-drag: none;
+        }
+
+        .area-contador img {
+            display: inline-block;
+            height: auto;
+            width: auto;
+            box-shadow: none;
+            pointer-events: auto;
+        }
+
+        .area-contador {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        nav ul { list-style: none; text-align: center; padding: 20px; }
+        nav ul li { display: inline; margin: 0 15px; }
+        nav ul li a { color: #fff; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+
+    </style>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="materias.html">Materias</a></li>
+            <li><a href="https://privacy.com.br/checkout/DeLilith" target="_blank">Fotos</a></li>
+            <li><a href="https://privacy.com.br/checkout/DeLilith" target="_blank">Videos</a></li>
+            <li><a href="https://privacy.com.br/checkout/DeLilith" target="_blank">Chat ao Vivo</a></li>
+            <li><a href="https://privacy.com.br/checkout/DeLilith" target="_blank" id="btn-login" style="font-weight: bold; color: #7938B2;">LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="fotos/imagens/00011.jpg" alt="Perfil" id="foto-principal" style="max-width: 400px;">
+        
+        <div class="area-contador">
+            <p style="color: #555; font-size: 12px; margin-bottom: 5px;">VISITAS</p>
+            <img src="https://hits.seeyoufarm.com" alt="Contador">
+        </div>
+    </header>
+
+    <main style="text-align: center; padding: 40px 20px;">
+        <h1 style="color: #7938B2; font-size: 2.5rem; letter-spacing: 2px;">Conteúdo Variado</h1>
+        
+        <section style="max-width: 600px; margin: 30px auto; line-height: 1.8; font-size: 1.1rem;">
+            <p>
+                Explore um universo de curiosidades e informações sobre diversos temas. 
+                Aqui compartilhamos conteúdos informativos para mentes abertas.
+            </p>
+            <p style="color: #ddd;">
+                Para ter acesso a conteúdos mais exclusivos, confira as outras seções do site.
+            </p>
+            <p style="margin-top: 20px; font-weight: bold; color: #7938B2;">
+                PRONTO PARA O PRÓXIMO NÍVEL?
+            </p>
+        </section>
+
+        <img src="fotos/imagens/00015.jpg" alt="Conteúdo" style="width: 100%; max-width: 800px; border: 1px solid #222;">
+        
+        <div style="margin-top: 40px;">
+            <a href="https://privacy.com.br/checkout/DeLilith" target="_blank" style="background: #7938B2; color: #fff; padding: 18px 40px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2rem; transition: 0.3s; box-shadow: 0 4px 15px rgba(121, 56, 178, 0.4);">
+                EXPLORAR CONTEÚDO
+            </a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9rem; color: #444;">
+            Conteúdo atualizado semanalmente.
+        </p>
+    </main>
+
+    <script>
+        document.onkeydown = function(e) {
+            if(event.keyCode == 123) { return false; } 
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { return false; }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; }
+            if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) { return false; } 
+        }
+
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('mousedown', function(e) { e.preventDefault(); }, false);
+        });
+    </script>
+
+</body>
+</html>
