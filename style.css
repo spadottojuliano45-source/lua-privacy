@@ -1,0 +1,41 @@
+body {
+    background: #0a0a0a;
+    color: white;
+    /* Escolha apenas uma declaração de fonte */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;/* Justify sem aspas */
+ 
+
+    
+    /* Removido align-items pois não há 'display: flex' aqui */
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;                    
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a{
+
+    color: white;
+    text-decoration: none;
+}
+
+img{
+
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 8px solid purple;
+}
+
+h1{
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif color purple;
+ 
+
+}
