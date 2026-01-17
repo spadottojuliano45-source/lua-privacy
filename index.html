@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #000; color: #fff; font-family: Arial, sans-serif; margin: 0;">
+
+    <style>
+        img {
+            max-width: 90%; 
+            height: auto;
+            display: block; 
+            margin: 20px auto; 
+            background-repeat: no-repeat;
+            box-shadow: 0 0 20px rgba(121, 56, 178, 0.2); 
+        }
+
+        .area-contador img {
+            display: inline-block;
+            height: auto;
+            width: auto;
+            box-shadow: none;
+        }
+
+        .area-contador {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        nav ul { list-style: none; text-align: center; padding: 20px; }
+        nav ul li { display: inline; margin: 0 15px; }
+        nav ul li a { color: #fff; text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+
+    </style>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="materias.html">Materias</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="#">Chat ao Vivo</a></li>
+            <li><a href="#" id="btn-login" style="font-weight: bold; color: #7938B2;">LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <!-- Alterado: removido border-radius para igualar à foto de baixo -->
+        <img src="fotos/imagens/00011.jpg" alt="Perfil" id="foto-principal" style="max-width: 400px;">
+        
+        <div class="area-contador">
+            <p style="color: #555; font-size: 12px; margin-bottom: 5px;">VISITAS</p>
+            <img src="https://hits.seeyoufarm.com" alt="Contador">
+        </div>
+    </header>
+
+    <main style="text-align: center; padding: 40px 20px;">
+        <h1 style="color: #7938B2; font-size: 2.5rem; letter-spacing: 2px;">PERFIL</h1>
+        <p style="font-style: italic; color: #aaa; font-size: 1.2rem; margin-top: -10px;"></p>
+
+        <section style="max-width: 600px; margin: 30px auto; line-height: 1.8; font-size: 1.1rem;">
+            <p>
+                Explore este espaço dedicado a compartilhar informações e conteúdo.
+            </p>
+            <p style="color: #ddd;">
+                Encontre aqui artigos interessantes, galerias de fotos e vídeos informativos.
+            </p>
+            <p style="margin-top: 20px; font-weight: bold; color: #7938B2;">
+                PRONTO PARA EXPLORAR?
+            </p>
+        </section>
+
+        <img src="fotos/imagens/00012.jpg" alt="Conteúdo" style="width: 100%; max-width: 800px; border: 1px solid #222;">
+        
+        <div style="margin-top: 40px;">
+            <a href="#" style="background: #7938B2; color: #fff; padding: 18px 40px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2rem; transition: 0.3s; box-shadow: 0 4px 15px rgba(121, 56, 178, 0.4);">
+                VER MAIS CONTEÚDO
+            </a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9rem; color: #444;">
+            Conteúdo atualizado semanalmente.
+        </p>
+    </main>
+
+</body>
+</html>
